@@ -1,4 +1,4 @@
-﻿using EShop.Application;
+﻿using EShop.Application.Services;
 using EShop.Domain.Enums;
 using EShop.Domain.Exceptions;
 using Microsoft.AspNetCore.Mvc;

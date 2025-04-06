@@ -1,7 +1,7 @@
 ﻿using EShop.Domain.Exceptions;
 using System.Text.RegularExpressions;
 
-namespace EShop.Application
+namespace EShop.Application.Services
 {
     public class CreditCardService : ICreditCardService
     {
@@ -21,7 +21,7 @@ namespace EShop.Application
             cardNumber = cardNumber.Replace(" ", "").Replace("-", "");
             if (!cardNumber.All(char.IsDigit))
                 throw new CardNumberInvalidException();
-            
+
             int sum = 0;
             bool alternate = false;
 
@@ -70,7 +70,7 @@ namespace EShop.Application
             if (Regex.IsMatch(cardNumber, @"^(50|5[6-9]|6\d)\d{10,17}$"))
                 return "Maestro";
 
-            return "UnexpectedType";
+            throw new CardNumberInvalidException();
         }
     }
 }

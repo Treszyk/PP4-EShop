@@ -1,4 +1,4 @@
-using EShop.Application;
+using EShop.Application.Services;
 using EShop.Domain.Exceptions;
 using Xunit;
 
@@ -6,7 +6,7 @@ namespace EShop.Application.Tests
 {
     public class CreditCardServiceTest
     {
-        private readonly CreditCardService _service = new CreditCardService();
+        private readonly CreditCardService _service = new();
 
         [Theory]
         [InlineData("12345678910111213")]

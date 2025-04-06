@@ -1,4 +1,4 @@
-using EShopService.Models;
+using EShop.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EShopService.Controllers

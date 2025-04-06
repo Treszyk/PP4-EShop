@@ -6,3 +6,4 @@
         public CardNumberTooShortException(string message) : base(message) { }
     }
 }
+//instalujemy te moduly w EShop.Domain i EShopService

@@ -1,4 +1,4 @@
-﻿namespace EShop.Application
+﻿namespace EShop.Application.Services
 {
     public interface ICreditCardService
     {
